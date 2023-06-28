@@ -1,0 +1,8 @@
+- step:
+    name: train-mnist
+    image: pytorchlightning/pytorch_lightning
+    environment: aws-eu-west-1-p2-xlarge
+    command:
+      - pip install --upgrade pip
+      - pip install valohai-utils
+      - python train.py
